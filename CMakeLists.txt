@@ -7,7 +7,7 @@ add_subdirectory(lib/SFML)
 add_executable(flora src/main.cpp)
 target_link_libraries(flora PRIVATE sfml-graphics)
 
-if(CMAKE_CXX_COMPILER_ID STREQUAL MSVC)
+if(MSVC)
   target_compile_options(flora PRIVATE /Wall)
 else()
   target_compile_options(flora PRIVATE -Wall -Wextra -pedantic)

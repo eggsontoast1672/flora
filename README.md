@@ -13,7 +13,18 @@ section below for instructions on how to compile on your platform.
 
 ### Windows
 
-To do.
+Building on Windows is supported, though begrudgingly. Just kidding. To build
+this program, ensure that you have the lastest version of Visual Studio
+installed with *Desktop Development with C++* enabled, as well as the latest
+version of CMake.
+
+Once you have those, clone the git repository onto your system and open the
+project in Visual Studio. The CMake cache should be automatically generated,
+but it does take a little bit. Check the output window for progress. Once the
+cache is ready, ensure that `flora.exe` is selected next to the green arrow at
+the top, then click the arrow to run. Everything should just work at this
+point. If something does not work, that is an issue. Feel free to file any
+issues you experience with the build process on GitHub.
 
 ### Linux
 
@@ -25,7 +36,7 @@ build dependencies [here](sfml-build-deps). They should all be available
 through your system's package manager.
 
 Once you have those, ensure that you have a C++ compiler which supports at
-least C++23. This should not be too big of an issue, just be aware that the
+least C\++23. This should not be too big of an issue, just be aware that the
 main feature used from C++23 is `std::expected`. You should also have a build
 tool like Make or Ninja installed, as well as the CMake build system generator.
 Once you have all of that, simply run the following commands in the root of the
