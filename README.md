@@ -32,7 +32,7 @@ You made the right choice. To compile this program, you will need all of the
 libraries required to build SFML, since we build that from source. As detailed
 above, we hope to eliminate the dependency on SFML in the future, but this is
 where we are for now. You can find a complete and up-to-date list of SFML's
-build dependencies [here](sfml-build-deps). They should all be available
+build dependencies [here][sfml-build-deps]. They should all be available
 through your system's package manager.
 
 Once you have those, ensure that you have a C++ compiler which supports at
