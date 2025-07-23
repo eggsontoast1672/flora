@@ -36,19 +36,21 @@ build dependencies [here](sfml-build-deps). They should all be available
 through your system's package manager.
 
 Once you have those, ensure that you have a C++ compiler which supports at
-least C\++23. This should not be too big of an issue, just be aware that the
-main feature used from C++23 is `std::expected`. You should also have a build
-tool like Make or Ninja installed, as well as the CMake build system generator.
-Once you have all of that, simply run the following commands in the root of the
-project:
+least C\++17. This should not be an issue at all, since every single compiler
+does nowadays. You should also have a build tool like Make or Ninja installed,
+as well as the CMake build system generator. Once you have all of that, simply
+run the following commands in the root of the project:
 
 ```bash
-cmake -B build
-cmake --build build
-build/flora
+cmake --preset linux-x64-debug # or linux-x64-release
+cmake --build out/build/linux-x64-debug
+out/build/linux-x64-debug/flora
 ```
 
-And you're in business!
+And you're in business! Generating the cache is extra simple with the help of
+CMake presets. It is not as ergonomic as it could be to actually build the
+project once the cache is generated, but that should be improved in the future
+with CMake build presets.
 
 [sfml-build-deps]: https://www.sfml-dev.org/tutorials/3.0/getting-started/build-from-source/#installing-dependencies
 
