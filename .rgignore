@@ -1,0 +1,4 @@
+# Do not fuzzy find files in subprojects. They often have a lot of files that
+# do not need to be modified, so seeing them all is very annoying and
+# unnecessary.
+/glfw
