@@ -1,17 +1,13 @@
 {
   "version": 2,
-  "buildPresets": [
+  "configurePresets": [
     {
       "name": "debug",
-      "displayName": "x64 Debug",
+      "displayName": "Debug",
       "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/${presetName}",
-      "architecture": {
-        "value": "x64",
-        "strategy": "external"
-      },
+      "binaryDir": "${sourceDir}/build",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_BUILD_TYPE": "Debug"
       }
     }
   ]
