@@ -4,7 +4,13 @@ project(Flora)
 
 add_subdirectory(lib/SFML)
 
-add_executable(flora src/main.cpp)
+add_executable(
+  flora
+  # src/glad.c
+  src/main.cpp
+)
+
+target_include_directories(flora PRIVATE include)
 target_link_libraries(flora PRIVATE sfml-graphics)
 
 if(MSVC)
